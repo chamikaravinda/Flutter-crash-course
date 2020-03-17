@@ -15,10 +15,21 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.amber[700],
       ),
       body: Center(
-        child:new Image.asset('images/car -1.jpg')
+        child:RaisedButton.icon(
+          onPressed: (){},
+          icon: Icon(
+            Icons.mail
+          ),
+          label: Text('Click ME'),
+          color: Colors.amber[700],
+        )
       ),
       floatingActionButton: FloatingActionButton(
-        child:Text('Click'),
+        child:Icon(
+          Icons.add,
+          color: Colors.white,
+          size: 50.0,
+        ),
         backgroundColor: Colors.amber[700],
       ),
     );
