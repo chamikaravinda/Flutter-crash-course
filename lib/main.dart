@@ -14,24 +14,35 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.amber[700],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Row(
         children: <Widget>[
-          Container(
-            color: Colors.grey,
-            padding: EdgeInsets.all(30.0),
-            child: Text('This is contrainer'),
+          Expanded(
+              flex: 8,
+              child: Image.asset('images/car -1.jpg')
           ),
-          Container(
-            color: Colors.cyan,
-            padding: EdgeInsets.all(30.0),
-            child: Text('This is contrainer'),
+          Expanded(
+            flex: 3,
+            child: Container(
+              color: Colors.pink,
+              padding: EdgeInsets.all(30.0),
+              child: Text('1'),
+            ),
           ),
-          Container(
-            color: Colors.lightBlueAccent,
-            padding: EdgeInsets.all(30.0),
-            child: Text('This is contrainer'),
+          Expanded(
+            flex: 2,
+            child: Container(
+              color: Colors.purple,
+              padding: EdgeInsets.all(30.0),
+              child: Text('2'),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              color: Colors.lightBlueAccent,
+              padding: EdgeInsets.all(30.0),
+              child: Text('3'),
+            ),
           )
         ],
       ),
