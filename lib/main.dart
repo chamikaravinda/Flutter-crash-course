@@ -14,15 +14,11 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.amber[700],
       ),
-      body: Center(
-        child:RaisedButton.icon(
-          onPressed: (){},
-          icon: Icon(
-            Icons.mail
-          ),
-          label: Text('Click ME'),
-          color: Colors.amber[700],
-        )
+      body: Container(
+          padding:EdgeInsets.fromLTRB(10, 10,10, 10),
+          margin: EdgeInsets.all(30),
+          color:Colors.grey,
+          child:Text('Hello world')
       ),
       floatingActionButton: FloatingActionButton(
         child:Icon(
